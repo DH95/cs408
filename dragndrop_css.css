@@ -1,0 +1,246 @@
+/*dark green: #1A7448*/
+/*light green: #F2FDE5*/
+/*dark grey: #575B52*/
+/*light grey: #797C75*/
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    font-size: 0;
+}
+
+body{
+    background-color: #F2FDE5;
+
+}
+
+.anchor_button{
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+}
+
+.anchor_button.waiting{
+    opacity: 0.3;
+}
+
+.anchor_text{
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    display: inline-block;
+    color: #575B52;
+}
+
+.anchor, .anchor_fix{
+    background-color: rgba(255, 0, 0, 0.3);
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+}
+
+
+.anchor_icon{
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bubble{
+    position: relative;
+    width: 100px;
+    height: 70px;
+    background: grey;
+    margin: 20px;    
+    z-index: 5;
+    display: inline-block;
+}
+.bubble.b1{
+    clip-path: polygon(0 0, 100% 0%, 100% 75%, 83% 75%, 83% 100%, 50% 75%, 0% 75%);
+}
+.bubble.b2{
+    clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 75%, 17% 100%, 17% 75%, 0% 75%);
+}
+.bubble.b3{
+    clip-path: polygon(50% 35%, 83% 0, 83% 35%, 100% 35%, 100% 100%, 0 100%, 0 35%);
+}
+.bubble.b4{
+    clip-path: polygon(17% 35%, 17% 0, 50% 35%, 100% 35%, 100% 100%, 0 100%, 0 35%);
+}
+
+.fixed_bar{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: #1A7448;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.fixed_bar_header{
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 50px;
+    padding-left: 10px;
+    z-index: 11;
+    display: inline-block;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.fixed_bar_select_device {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    font-size: 30px;
+    line-height: 30px;
+    float: right;
+}
+
+.dropdown_btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown_btn:hover{
+    background-color: red;
+}
+
+.dropdown_content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 12;
+}
+
+.dropdown_content .option{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.fixed_bar_placeholder{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.side_bar{
+    width: 30px;
+    height: 100%;
+    line-height: 100%;
+    background-color: #575B52;
+    position: fixed;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.side_bar_switch{
+    width: 20px;
+    height: 100%;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    float: right;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 300px;
+}
+
+.screen{
+
+}
+
+.section{
+    display: inline-block;
+    width: 300px;
+    height: 600px;
+    background-color: #ffffff;
+    margin-left: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    vertical-align: top;
+}
+
+.onboarding{
+    width: 280px;
+    height: 30px;
+    margin: 10px;
+    background-color: #575B52;
+}
+
+.section_header{
+    color: #ffffff;
+    background-color: #1A7448;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+}
+
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.iframe_div{
+    display: inline-block;
+    margin-left: 20px;
+    width: 300px;
+    position: relative;
+}
+
+.phone_top{
+    width: 300px;
+    height: 20px;
+    border-radius: 25px;
+    border-top: 20px solid #575B52;
+    margin-bottom: -20px;
+}
+
+.phone_bottom{
+    width: 300px;
+    height: 30px;
+    border-radius: 25px;
+    border-bottom: 30px solid #575B52;
+    margin-top: -30px;
+}
+
+#iframe{
+    width: 300px;
+    height: 520px;
+    border: none;
+    display: inline-block;
+    top: 80px;
+    left: 200px;
+    z-index: 1;
+    vertical-align: top;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
