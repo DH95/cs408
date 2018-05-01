@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 	$('.dropdown_btn').hover(function(){
 			$('.dropdown_content').css('display','block');
-		}
+		} 
 		// },function(){
 		// 	$('.dropdown_content').css('display','none');
 		// }
